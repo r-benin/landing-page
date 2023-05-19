@@ -1,0 +1,222 @@
+body {
+    background-color: black;
+    font-family: "Century Gothic", sans-serif;
+    margin: 0;
+    width: 100%;
+
+}
+
+.top {
+    background-color: rgba(211, 2, 2, 0.5);
+    display: flex;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    box-shadow: 0px 0px 8px;
+    z-index: 100;
+}
+
+.header-bg {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: linear-gradient(red, yellow);
+}
+
+.logo {
+    width: 80px;
+}
+
+.header {
+    background-color: transparent;
+    flex: 3;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.header-button {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1.5;
+}
+
+.header-button a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.bg {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.info-container {
+    width: 100%;
+    height: 550px;
+    left: 0;
+    top: 50px;
+    position: absolute;
+    display: flex;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.info {
+    background-color: rgba(0,0,0, 0.7);
+    width: 70%;
+    border-radius: 8px;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    box-shadow: 0px 0px 8px black;
+}
+
+.left-info {
+    flex: 4;
+}
+
+.right-info {
+    flex: 1;
+    padding-left: 30px;
+}
+
+.slayers {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    padding-bottom: 25px;
+    top: 620px;
+    z-index: 1;
+    background-image: linear-gradient(#000000,#550707);
+    color: rgb(255, 191, 0);
+    text-shadow: 0px 0px 10px red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: 0px 0px 15px black;
+}
+
+.slayer-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.slayer {
+    border: solid black 2px;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: none;
+    padding: 10px;
+    padding-bottom: 0px;
+    background-image: linear-gradient(#ffd500, #950D0D);
+    color: black;
+    box-shadow: 0px 0px 15px black;
+}
+
+.pic-container {
+    border: solid black 2px;
+    border-radius: 10px;
+    width: 175px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.pic {
+    position: absolute;
+    height: 150%;
+    top: -25%;
+}
+
+.quote {
+    position: relative;
+    display: flex;
+    z-index: 0;
+    top: 1050px;
+    height: 500px;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.quote-bg {
+    position: absolute;
+    width: 110%;
+    left: -50px;
+    top: -50px;
+    filter: brightness(60%) blur(7px);
+}
+
+.quote-text {
+    position: absolute;
+    z-index: 100;
+    color: white;
+    font-size: 45px;
+    text-shadow: 0px 0px 10px black;
+    bottom: 50%;
+}
+
+.contact {
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 25px;
+    width: 70%;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1000;
+    top: 55%;
+    box-shadow: 0px 0px 10px black;
+}
+
+button {
+    border: transparent;
+    background-image: linear-gradient(rgb(212, 76, 68, 1), rgb(166, 8, 8, 1));
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: lighter;
+    box-shadow: 0px 0px 10px rgb(212, 76, 68);
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    position: absolute;
+    z-index: 100;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 15px black;
+}
+
+
