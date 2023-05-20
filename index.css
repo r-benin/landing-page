@@ -50,6 +50,13 @@ body {
     font-size: 20px;
 }
 
+.header-button a:hover {
+    text-decoration: none;
+    color: red;
+    text-shadow: 0px 0px 10px red;
+    font-size: 20px;
+}
+
 .bg {
     width: 100%;
     position: absolute;
@@ -92,7 +99,7 @@ body {
 
 .slayers {
     width: 100%;
-    overflow: hidden;
+    overflow: visible;
     position: absolute;
     padding-bottom: 25px;
     top: 620px;
@@ -103,7 +110,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
     box-shadow: 0px 0px 15px black;
 }
 
@@ -117,12 +123,18 @@ body {
     border: solid black 2px;
     border-radius: 10px;
     text-align: center;
-    text-shadow: none;
+    text-shadow: 0px 0px 10px black;
     padding: 10px;
     padding-bottom: 0px;
     background-image: linear-gradient(#ffd500, #950D0D);
-    color: black;
+    color: white;
     box-shadow: 0px 0px 15px black;
+    transition: all 0.3s;
+
+}
+
+.slayer:hover {
+    transform: scale(1.2);
 }
 
 .pic-container {
@@ -196,11 +208,12 @@ button {
     padding-right: 20px;
     font-weight: lighter;
     box-shadow: 0px 0px 10px rgb(212, 76, 68);
+    cursor: pointer;
 }
 
-button a {
-    text-decoration: none;
-    color: white;
+button:hover {
+    box-shadow: 0px 0px 10px yellow;
+    color: yellow;
 }
 
 .footer {
